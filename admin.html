@@ -1,0 +1,14 @@
+<!-- templates/admin.html -->
+{% extends "base.html" %}
+{% block content %}
+<div class="mt-5">
+  <h3 class="text-center mb-4">Upload Certificate</h3>
+  <form action="/upload" method="POST" enctype="multipart/form-data" class="mx-auto" style="max-width: 500px;">
+    <div class="mb-3">
+      <label for="pdf" class="form-label">Select PDF Certificate:</label>
+      <input class="form-control" type="file" id="pdf" name="pdf" accept=".pdf" required>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Upload & Generate</button>
+  </form>
+</div>
+{% endblock %}

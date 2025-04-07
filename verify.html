@@ -1,0 +1,14 @@
+<!-- templates/verify.html -->
+{% extends "base.html" %}
+{% block content %}
+<div class="mt-5">
+  <h3 class="text-center mb-4">Verify Certificate</h3>
+  <form action="/verify" method="POST" class="mx-auto" style="max-width: 500px;">
+    <div class="mb-3">
+      <label for="hash" class="form-label">Enter Certificate Hash:</label>
+      <input type="text" class="form-control" id="hash" name="hash" placeholder="Enter SHA-256 hash" required>
+    </div>
+    <button type="submit" class="btn btn-success w-100">Verify</button>
+  </form>
+</div>
+{% endblock %}

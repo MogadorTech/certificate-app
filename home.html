@@ -1,0 +1,12 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center mt-5">
+  <h2>Welcome to the Certificate Management System of ENSAK</h2>
+  <p>Please choose your role:</p>
+  <div class="mt-4">
+    <a href="/admin" class="btn btn-primary btn-lg mx-2">University Administrator</a>
+    <a href="/verify" class="btn btn-success btn-lg mx-2">Organization</a>
+  </div>
+</div>
+{% endblock %}
